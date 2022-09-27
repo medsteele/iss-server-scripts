@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # upgrade system
+DEBIAN_FRONTEND=noninteractive
 apt update && apt upgrade -y
 
 # install nginx & jq & curl
