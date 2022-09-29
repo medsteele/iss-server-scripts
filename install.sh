@@ -2,7 +2,9 @@
 
 # upgrade system
 DEBIAN_FRONTEND=noninteractive
-apt update && apt upgrade -y
+apt update -y
+DEBIAN_FRONTEND=noninteractive
+apt upgrade -y
 
 # install nginx & jq & curl
 DEBIAN_FRONTEND=noninteractive
