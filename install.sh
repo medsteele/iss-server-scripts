@@ -6,7 +6,11 @@ apt update && apt upgrade -y
 
 # install nginx & jq & curl
 DEBIAN_FRONTEND=noninteractive
-apt install nginx jq curl -y
+apt install nginx -y
+DEBIAN_FRONTEND=noninteractive
+apt install jq -y
+DEBIAN_FRONTEND=noninteractive
+apt install curl -y
 
 # configure nginx
 #rm -r /var/www/html/*
