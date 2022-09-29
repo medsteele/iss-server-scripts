@@ -5,6 +5,7 @@ DEBIAN_FRONTEND=noninteractive
 apt update && apt upgrade -y
 
 # install nginx & jq & curl
+DEBIAN_FRONTEND=noninteractive
 apt install nginx jq curl -y
 
 # configure nginx
