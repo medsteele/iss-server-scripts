@@ -1,18 +1,10 @@
 #!/bin/bash
 
 # upgrade system
-DEBIAN_FRONTEND=noninteractive
-apt update -y
-DEBIAN_FRONTEND=noninteractive
-apt upgrade -y
+apt update -y && apt upgrade -y
 
 # install nginx & jq & curl
-DEBIAN_FRONTEND=noninteractive
-apt install nginx -y
-DEBIAN_FRONTEND=noninteractive
-apt install jq -y
-DEBIAN_FRONTEND=noninteractive
-apt install curl -y
+apt install nginx -y && apt install jq -y && apt install curl -y
 
 # configure nginx
 #rm -r /var/www/html/*
